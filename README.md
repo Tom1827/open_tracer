@@ -32,7 +32,7 @@ Thanks to the wonderful strength of the Python ecosystem, this works and took on
 * The photo needs to be clear, as pyzbar needs to recognise all four QR codes.  I had issues making this work reliably with an iPhone 13 Pro and 1 cm QR codes, so I increased them to 1.5 cm which seems to be much better.
 * Currently, with the page laid out as described above, the scanned area will be the area surrounded by the *inner* corners of the QR codes, so 24cm by 16cm.
 * The output dimensions seem pretty accurate, although annoyingly they're output in tenths of a millimeter, so you might need to do a little scaling.
-* The default tracing approach is to trace both sides of a thin line; if you're modelling from the created vector, you'll probably want to choose one of the sides and delete the other.
+* The default tracing approach is to trace both sides of objects, even if it's a very thin line; if you're modelling from the created vector, you'll probably want to choose one of the sides and delete the other.
 
 ## Possible future to-dos
 * Fix the rotation issue so any orientation of image will work.
