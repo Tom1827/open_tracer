@@ -7,12 +7,12 @@ I happened across [a TikTok video](https://www.tiktok.com/@morleykert/video/7331
 
 ## Concept
 1.  Create [a page](https://github.com/Tom1827/open_tracer/blob/main/page%20v2.pdf) with QR codes placed at known locations (which can be printed out).
-2.  Draw a design on that page, and take a photo of it at a decent resolution.
-3.  Analyse the page with [pyzbar](https://github.com/NaturalHistoryMuseum/pyzbar/tree/master), returning the QR code locations
+2.  Draw a design on that page and take a digital photograph of it.
+3.  Analyse that iamge with [pyzbar](https://github.com/NaturalHistoryMuseum/pyzbar/tree/master), returning the QR code locations
 4.  Use [pillow](https://github.com/python-pillow/Pillow) to perform a perspective transform using the QR code locations, effectively straightening the image (removing any perspective skew introduced when the photograph was taken).
 5.  Use [pyautotrace](https://github.com/lemonyte/pyautotrace) to trace the straightened image, and then output the resulting vector in a couple of useful vector formats.
 
-Thanks to the wonderful strength of the Python ecosystem, this works and took only a handful of lines of code.
+Thanks to the wonderful strength of the Python ecosystem, this works and took only a handful of lines of code.  And thanks to Stack Overflow commenters for the [perspective transform code](https://stackoverflow.com/questions/53032270/perspective-transform-with-python-pil-using-src-target-coordinates), obvs.
 
 ## Test example
 * Download test.jpg and open_tracer.py into the same folder.
