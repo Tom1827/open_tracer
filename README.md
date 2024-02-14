@@ -19,11 +19,12 @@ Thanks to the wonderful strength of the Python ecosystem, this works and took on
 * Make sure that the dependences are installed (pyzbar, autotrace, pillow, and [numpy](https://github.com/numpy/numpy))
 * Run `python open_tracer.py test.jpg`
 * All being well, traced DXF and SVG files should be created.
+* FYI, the rounded rectangle in test.jpg is the outline of a ugreen USB switcher that I wanted to model some brackets for.
 
 ## Tracing your own drawing
-* Download and print out page v2.pdf **without scaling**.  Note that one of the shorter sides of the resultant print had a slightly larger margin.  It's A4 only currently - sorry.
+* Download and print out page v2.pdf **without scaling**.  Note that one of the shorter sides of the resultant print has a slightly larger margin.  It's A4 only currently - sorry.
 * Draw something on the page.
-* Placing the page in landscape, and the larger margin to the right, take a careful and clear picture of the page.
+* Placing the page in landscape, with the larger margin to the right, take a careful and clear picture of the page.
 * Copy that image file into the folder with open_tracer.py, and run `python open_tracer.py <yourfile.jpg>`
 
 ## Notes
